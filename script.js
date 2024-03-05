@@ -74,8 +74,19 @@ let button = create_button("button","type","button","class","button","onclick","
 
 box4.append(label1,break1,input1,break2,button);
 document.body.append(box4);
+//disable the button initialy
+button.disabled = true;
+// Add an event listener to the input field to enable/disable the button
+document.querySelector(".input").addEventListener("input", function() {
+    if (this.value.trim() !== "") { // Check if there is input
+        button.disabled = false; // Enable the button
+    } else {
+        button.disabled = true; // Disable the button if there is no input
+    }
+});
 //Async, await function to fetch the data
 async function button_click(){
+    if (!button.disabled){
     try//try it is the test block
     {
         var get_input = document.querySelector(".input").value;
@@ -141,7 +152,7 @@ document.body.append(card);//card is appended to the body
    
   }
  
-  
+}
 
 
 

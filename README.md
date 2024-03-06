@@ -16,7 +16,7 @@
   </ul>
   <li>Use only HTML, CSS, BOOTSTRAP,& JAVASCRIPT</li>
 </ul>
-I have successfully developed the code and deployed the code using the github repo and NetLify by following above mentoned constraints<br>
+I have successfully developed the code and deployed the code using the github repo and NetLify by following above mentioned constraints<br>
 Here I have used a Punk API to develop the project/task<br>
 <h3>API Link</h3>
 https://punkapi.com/documentation/v2

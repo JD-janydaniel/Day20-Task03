@@ -1,86 +1,150 @@
-body{
-    background-color: #E6E6FA;
-    margin-bottom: 20px;
+body {
+  background-color: #e6e6fa;
+  padding: 20px;
 }
-.heading{
+
+@media screen and (min-width: 720px) {
+  .heading {
     font-style: italic;
     text-align: center;
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 800;
-}
-.flexbox{
-    margin-top: 50px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.boxmain{
-    background-color: #D8BFD8;
-    display: inline-block;
+    border: 4px Solid darkorchid;
+    border-radius: 20px;
+  }
+  .boxmain {
+    background-color: #d8bfd8;
     margin-left: 50px;
     width: 45%;
-    height:5%;
-    font-size: 25px;
+    height: 5%;
+    font-size: 2rem;
     border-radius: 15px;
     border: 1px solid black;
     box-shadow: 10px 10px;
-}
-.boxmain1{
-    background-color: #D8BFD8;
-    display: inline-block;
-    margin-right:50px ;
+  }
+  .boxmain1 {
+    background-color: #d8bfd8;
+    margin-left: 50px;
     width: 45%;
-    height:5%;
-    font-size: 25px;
+    height: 5%;
+    font-size: 2rem;
     border-radius: 15px;
     border: 1px solid #000;
     box-shadow: 10px 10px;
-    
-        
-}
-.boxmain2{
-    margin-top: 40px;
-    margin-left: 26%;
-    width: 45%;
-    height:5%;
-    text-align: center;
-}
-.label{
-    font-size: 30px;
+  }
+  .label {
+    font-size: 2rem;
     font-style: italic;
-}
-.input{
-    
-    width:500px;
-    height:50px;
-    font-size: 25px;
+  }
+  .input {
+    width: 30%;
+    height: 50px;
+    font-size: 2rem;
     border-radius: 10px;
-}
-.button{
+  }
+  .button {
     margin-top: 10px;
-    width:250px;
-    height:50px;
-    font-size: 25px;
+    width: 15%;
+    height: 50px;
+    font-size: 2rem;
     border-radius: 50px;
-}
-.cardbox{
+  }
+  .cardbox {
     margin-top: 30px;
     margin-left: 32%;
     margin-bottom: 30px;
-    font-size: 25px;
+    font-size: 2rem;
     font-style: italic;
-    }
-    .card{
-        border-radius: 50px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-color: #D8BFD8;
-    }
-.span{
+  }
+}
+@media screen and (max-width: 720px) {
+  .heading {
+    font-style: italic;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    border: 4px Solid darkorchid;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .boxmain {
+    background-color: #d8bfd8;
+    margin-left: 50px;
+    width: 45%;
+    height: 5%;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 10px 10px;
+    overflow: hidden;
+  }
+  .boxmain1 {
+    background-color: #d8bfd8;
+    margin-left: 50px;
+    width: 45%;
+    height: 5%;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 1px solid #000;
+    box-shadow: 10px 10px;
+    overflow: hidden;
+  }
+  .label {
+    font-size: 1rem;
+    font-style: italic;
+    overflow: hidden;
+  }
+  .input {
+    width: 30%;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .button {
+    margin-top: 10px;
+    width: 15%;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .cardbox {
     margin-top: 30px;
-    margin-left: 40%;
-    font-size: 35px;
-    color: red;
+    margin-left: 32%;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-style: italic;
+  }
+}
+
+.flexbox {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 4px dotted blueviolet;
+  border-radius: 20px;
+}
+
+.boxmain2 {
+  margin-top: 40px;
+  height: auto;
+  text-align: center;
+  border: 4px dashed blueviolet;
+  border-radius: 20px;
+}
+.card {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #d8bfd8;
+}
+.span {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 40%;
+  font-size: 35px;
+  color: red;
 }

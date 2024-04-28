@@ -66,9 +66,10 @@ box1.append(box2,box3)
 document.body.append(box1);
 //function to create a div(box4)
 let box4 = create_div("div","class","boxmain2");
-let label1 = create_label("label","for","search","class","label","Enter the id: (enter the id number between 1 to 325)");
+let label1 = create_label("label","for","search","class","label",`Enter the id:
+(enter the id number between 1 to 325)`);
 let break1 = create_break();
-let input1 = create_input("input","type","text","id","search","class","input","placeholder","Enter the number between 1 to 325");
+let input1 = create_input("input","type","text","id","search","class","input","placeholder","Enter the no between 1 to 325");
 let break2 = create_break();
 let button = create_button("button","type","button","class","button","onclick","button_click()","Click Me");
 
@@ -94,7 +95,7 @@ async function button_click(){
     
     let res =  await fetch(`https://api.punkapi.com/v2/beers/${get_input}`) 
     let res1 = await res.json()
-    //console.log(res1);
+    // console.log(res1);
     let brew = res1[0];
     //console.log(brew);
     // Remove any existing card elements
